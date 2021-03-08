@@ -21,6 +21,6 @@ from django.urls.conf import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('core/', views.home, name='home'),
+    path('', views.home, name='home'),
     path('contato/', views.contact, name='contact')
 ]
