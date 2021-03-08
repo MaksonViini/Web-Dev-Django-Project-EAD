@@ -25,7 +25,7 @@ SECRET_KEY = 'cavx4u4o2_2n-hwrtx&c6$h&u^2yplo&8i^u9=0t-vg7!hjd*+'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -37,6 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    
+    'SimpleMooc.core'
 ]
 
 MIDDLEWARE = [
