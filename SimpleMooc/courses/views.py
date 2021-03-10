@@ -1,6 +1,13 @@
 from django.shortcuts import render
+from .models import Course
 
 # Create your views here.
+
+
 def index(request):
+    courses = Course.objects.all()
     path = 'courses/index.html'
-    return render(request, path)
+    context = {
+        'courses': courses
+    }
+    return render(request, path, context)

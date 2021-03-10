@@ -26,6 +26,7 @@ class Course(models.Model):
     def __str__(self):
         return self.name
 
+
 class Meta:
     verbose_name = 'Curso'
     verobse_name_plural = 'Cursos'

@@ -21,5 +21,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('SimpleMooc.core.urls'), name='core'),
     path('', include('SimpleMooc.courses.urls'), name='courses'),
-    
+
 ]
